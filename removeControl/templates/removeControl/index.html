@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Control</title>
+    <link rel="stylesheet" href="{% static 'site.css' %}" />
+    <script src="https://kit.fontawesome.com/70bfd40ea3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-menu">
+
+        <div class="menu-item hello-words">
+            <div class="hello-words-item">Welcome to Remove Control</div>
+            <div class="hello-words-item">Connected</div>
+        </div>
+
+        <div class="menu-item sotial-media-menu">
+                <div class="sotial-media-item youtube">
+                    <form method="post" action="{% url 'run_youtube' %}">
+                        {% csrf_token %}
+                        <button type="submit"><i class="fa-brands fa-youtube fa-5x"></i></button>
+                    </form>
+                </div>
+                <div class="sotial-media-item inst">
+                    <form method="post" action="{% url 'run_inst' %}">
+                        {% csrf_token %}
+                        <button type="submit"><i class="fa-brands fa-instagram fa-5x"></i></button>
+                    </form>
+                </div>
+                <div class="sotial-media-item vk">
+                    <form method="post" action="{% url 'run_vk' %}">
+                        {% csrf_token %}
+                        <button type="submit"><i class="fa-brands fa-vk fa-5x"></i></button>
+                    </form>
+                </div>
+                <div class="sotial-media-item tg">
+                    <form method="post" action="{% url 'run_tg' %}">
+                        {% csrf_token %}
+                        <button type="submit"><i class="fa-brands fa-telegram fa-5x"></i></button>
+                    </form>
+                </div>
+                <div class="sotial-media-item yandex">
+                    <form method="post" action="{% url 'run_yandex' %}">
+                        {% csrf_token %}
+                        <button type="submit"><i class="fa-brands fa-yandex fa-5x"></i></button>
+                    </form>
+                </div>
+        </div>
+{#second menu---------------------------------------------------------#}
+        <div class="menu-item sotial-media-menu">
+                <div class="sotial-media-item gedit">
+                    <form method="post" action="{% url 'run_gedit' %}">
+                        {% csrf_token %}
+                    <button type="submit"><i class="fa-solid fa-pen-to-square fa-5x"></i></button>
+                    </form>
+                </div>
+                <div class="sotial-media-item spotify">
+                    <form method="post" action="{% url 'run_spotify' %}">
+                        {% csrf_token %}
+                        <button type="submit"><i class="fa-brands fa-spotify fa-5x"></i></button>
+                    </form>
+                </div>
+                <div class="sotial-media-item camera">
+                    <form method="post" action="{% url 'run_camera' %}">
+                        {% csrf_token %}
+                        <button type="submit"><i class="fa-solid fa-camera fa-5x"></i></button>
+                    </form>
+                </div>
+                <div class="sotial-media-item calendar">
+                    <form method="post" action="{% url 'run_calendar' %}">
+                        {% csrf_token %}
+                        <button type="submit"><i class="fa-sharp fa-regular fa-calendar fa-5x"></i></button>
+                    </form>
+                </div>
+                <div class="sotial-media-item discord">
+                    <form method="post" action="{% url 'run_discord' %}">
+                        {% csrf_token %}
+                        <button type="submit"><i class="fa-brands fa-discord fa-5x"></i></button>
+                    </form>
+                </div>
+        </div>
+
+        <div class="menu-item sotial-media-menu">
+                <div class="sotial-media-item light" style=" display: grid; grid-template-rows: 180px auto;">
+                    <div  style=" margin: auto;">
+                        <form method="post" action="{% url 'run_lightup_full' %}">
+                        {% csrf_token %}
+                        <button style="height: 180px; width: 100%; ;" type="submit"><i class="fa-solid fa-volume-high fa-4x"></i></button>
+                    </form>
+                    </div>
+                    <div class="light-item" style="display: grid; grid-template-columns: auto auto auto;">
+                        <div class="light-buttons">
+                            <form method="post" action="{% url 'run_lightup_plus' %}">
+                                {% csrf_token %}
+                                <button style="height: 70px; width:100%;" type="submit"><i class="fa-solid fa-plus fa-3x"></i></button>
+                            </form>
+                        </div>
+                        <div class="light-buttons">
+                            <form method="post" action="{% url 'run_lightup_low' %}">
+                                {% csrf_token %}
+                                <button style="height: 70px; width:100%;" type="submit"><i class="fa-solid fa-volume-off fa-3x"></i></button>
+                            </form>
+
+                        </div>
+                        <div class="light-buttons">
+                            <form method="post" action="{% url 'run_lightup_minus' %}">
+                                {% csrf_token %}
+                                <button style="height: 70px; width:100%;" type="submit"><i class="fa-solid fa-minus fa-3x"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sotial-media-item screenshot">
+                    <form method="post" action="{% url 'run_screenshot' %}">
+                        {% csrf_token %}
+                        <button type="submit"><i class="fa-solid fa-photo-film fa-5x"></i></button>
+                    </form>
+                </div>
+                <div class="sotial-media-item tab">
+                    <form method="post" action="{% url 'run_tab' %}">
+                        {% csrf_token %}
+                        <button type="submit" style="font-weight: bold; font-size: 50px">TAB</button>
+                    </form>
+                </div>
+                <div class="sotial-media-item space">
+                    <form method="post" action="{% url 'run_space' %}">
+                        {% csrf_token %}
+                        <button type="submit"style="font-weight: bold; font-size: 50px">SPACE</button>
+                    </form>
+                </div>
+                <div class="sotial-media-item enter">
+                    <form method="post" action="{% url 'run_enter' %}">
+                        {% csrf_token %}
+                        <button type="submit"style="font-weight: bold; font-size: 50px">ENTER</button>
+                    </form>
+                </div>
+        </div>
+
+    </div>
+</body>
+</html>

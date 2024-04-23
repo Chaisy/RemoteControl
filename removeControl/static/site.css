@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #E9FAE3;
+
+}
+.main-menu{
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    background: #DEE8D5;
+    padding-bottom: 10px;
+    row-gap: 50px;
+}
+.menu-item{
+  height: 250px;
+  background-color: #BBC7BC;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  text-align: center;
+}
+.hello-words{
+    display: grid;
+    grid-template-rows: auto auto;
+    padding-bottom: 10px;
+    row-gap: 10px;
+}
+.hello-words-item{
+  height: 20px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.sotial-media-menu{
+    align-items: center;
+    border:1px solid black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.sotial-media-item{
+    height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  text-align: center;
+}
+button{
+    height: 250px;
+    width: 100%;
+    background: transparent;
+
+}
+.gedit{
+    background: #d1cfe2;
+}
+.spotify{
+    background: #7BBD86;
+}
+.vk{
+    background: #4ba1e7;
+}
+.tg{
+    background: #93c6f0;
+}
+.yandex{
+    background: #e17666;
+}
+.youtube{
+    background: #ec422a;
+}
+.inst{
+    background: #e785df;
+}
+.camera{
+    background: #bbbdc9;
+}
+.calendar{
+    background: #ffcf70;
+}
+.discord{
+    background: #4a4bff;
+}
+.light{
+ background: #d6ffe9;
+}
+.tab{
+    background: #afc6d4;
+}
+.screenshot{
+    background: #d2b2c2;
+}
+.space{
+    background: #d0b3d0;
+}
+.enter{
+    background: #f58e9a;
+}
